@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ganling Zhou | Sound Supervisor, Composer & Creative Technologist</title>
+    <style>
+        /* --- Core Reset & Base Styles --- */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.7;
+            padding: 0 24px;
+            letter-spacing: -0.01em;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* --- Layout Container --- */
+        .container {
+            max-width: 900px; /* Slightly widened to accommodate the side-by-side layout nicely */
+            margin: 0 auto;
+            padding: 80px 0 120px 0;
+        }
+
+        /* --- Navigation & Header --- */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            border-bottom: 1px solid #1a1a1a;
+            padding-bottom: 24px;
+            margin-bottom: 60px;
+        }
+
+        .brand {
+            font-size: 16px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+        }
+
+        .nav-links a {
+            font-size: 13px;
+            color: #888888;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-left: 24px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #ffffff;
+        }
+
+        /* --- About Section (Side-by-Side Flex Layout) --- */
+        .about-wrapper {
+            display: flex;
+            gap: 48px;
+            align-items: flex-start;
+        }
+
+        .profile-side {
+            flex-shrink: 0;
+        }
+
+        .profile-pic {
+            width: 160px;
+            height: 160px;
+            object-fit: cover;
+            border: 1px solid #222222;
+            filter: grayscale(100%);
+            transition: filter 0.5s ease;
+        }
+
+        .profile-pic:hover {
+            filter: grayscale(0%);
+        }
+
+        .content-side {
+            flex-grow: 1;
+        }
+
+        /* --- Typography --- */
+        h1 {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 1.3;
+            letter-spacing: -0.02em;
+            margin-bottom: 32px;
+            color: #ffffff;
+        }
+
+        h2 {
+            font-size: 13px;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.2em;
+            color: #ffffff;
+            margin-bottom: 24px;
+            border-left: 2px solid #ffffff;
+            padding-left: 12px;
+        }
+
+        p {
+            font-size: 15px;
+            color: #a0a0a0;
+            margin-bottom: 24px;
+            font-weight: 300;
+        }
+
+        /* --- Layout Sections --- */
+        section {
+            margin-bottom: 96px;
+        }
+
+        /* --- Responsive Video Wrapper --- */
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 Aspect Ratio */
+            height: 0;
+            overflow: hidden;
+            background: #0d0d0d;
+            border: 1px solid #1a1a1a;
+            margin-bottom: 24px;
+            margin-top: 24px;
+        }
+
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* --- Footer Contact --- */
+        footer {
+            border-top: 1px solid #1a1a1a;
+            padding-top: 32px;
+            text-align: center;
+        }
+
+        .email-link {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 14px;
+            letter-spacing: 0.05em;
+            font-weight: 500;
+            border-bottom: 1px dashed #ffffff;
+            padding-bottom: 2px;
+            transition: color 0.3s ease, border-color 0.3s ease;
+        }
+
+        .email-link:hover {
+            color: #888888;
+            border-color: #888888;
+        }
+
+        /* --- Mobile Optimization --- */
+        @media (max-width: 768px) {
+            .container { padding: 40px 0; }
+            header { margin-bottom: 40px; }
+            h1 { font-size: 26px; }
+            .about-wrapper { flex-direction: column; gap: 32px; }
+            .profile-pic { width: 120px; height: 120px; }
+            .nav-links { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        
+        <header>
+            <div class="brand">Ganling Zhou</div>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+            </div>
+        </header>
+
+        <section id="about" class="about-wrapper">
+            
+            <div class="profile-side">
+                <img src="mosssoap-.001.jepg" alt="Ganling Zhou Profile" class="profile-pic">
+            </div>
+
+            <div class="content-side">
+                <h2>About Me</h2>
+                <h1>Ganling Zhou is a New York-based Sound Supervisor, Composer, and Creative Technologist.</h1>
+                <p>
+                    An alumnus of New York University’s (NYU) Music Technology program, Zhou represents the next generation of hybrid film and media creatives. They currently serve as a resident technologist and gallery manager at Harvestworks, New York City's premier contemporary media art center. Backed by an elite institutional pedigree from NYU and advanced research frameworks from IRCAM (Institute for Research and Coordination in Acoustics/Music, France), Zhou seamlessly bridges the gap between complex software architecture and visceral sonic artistry.
+                </p>
+                <p>
+                    As a rare "dual-threat" creator proficient in both algorithmic systems and physical computing, Zhou specializes in advanced digital signal processing (DSP), real-time communications, and intricate spatial audio frameworks. Rejecting conventional scoring tropes, they treat film audio as a living, breathing architectural space. By blending raw instrumental expression with industrial physical acoustics and avant-garde synthesis, Zhou constructs high-gravity, deeply immersive sonic universes—offering cinema and multimedia installations an elevated artistic edge and a world-class, festival-ready identity.
+                </p>
+                <p>
+                    Their original sonic installations and hardware-integrated soundscapes have been deployed and exhibited at major creative landmarks, including the Yale Center for Collaborative Arts and Media (CCAM) and Governors Island.
+                </p>
+            </div>
+            
+        </section>
+
+        <section id="work">
+            <h2>Selected Works</h2>
+            
+            <div class="work-item" style="margin-bottom: 80px;">
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/GZAa1bc2btE?autoplay=1&mute=1" 
+                        title="Blackhead - Sound Design & Score Demo by Ganling Zhou" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p>
+                    <strong>Blackhead — Sound Design & Original Score</strong><br>
+                    An exploration of heavy synthesis, raw instrumental distortion, and minimalist environmental textures. This project showcases an intricate deployment of acoustic dynamics and bespoke signal processing designed to build a tense, high-gravity narrative atmosphere that subverts traditional cinematic tropes.
+                </p>
+            </div>
+
+            <div class="work-item">
+                <div class="video-wrapper">
+                    <iframe 
+                        src="https://www.youtube.com/embed/GZAa1bc2btE?autoplay=1&mute=1" 
+                        title="Cadence Video Poetry Festival Project" 
+                        frameborder="0" 
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        allowfullscreen>
+                    </iframe>
+                </div>
+                <p>
+                    <strong>Cadence Video Poetry Festival Showcase</strong><br>
+                    Original architectural soundscapes and spatialized backing tracks featured and celebrated within this international showcase. This work highlights the intersection of avant-garde visual poetry and experimental audio processing systems.
+                </p>
+            </div>
+        </section>
+
+        <footer>
+            <a href="mailto:ganlingzhou@outlook.com" class="email-link">ganlingzhou@outlook.com</a>
+        </footer>
+
+    </div>
+
+</body>
+</html>
